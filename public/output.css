@@ -884,6 +884,10 @@ video {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  .md\:duration-300 {
+    transition-duration: 300ms;
+  }
 }
 
 @media (min-width: 1024px) {
