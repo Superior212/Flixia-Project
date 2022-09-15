@@ -1,0 +1,129 @@
+
+.container{
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card{
+  position: relative;
+  left: 3%;
+  width: 300px;
+  height: 370px;
+  transition: 0.3s ease-out;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+}
+.card .imgbox{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.card .imgbox img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  display: block;
+  transition: 0.5s;
+}
+  .card .content{
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 15%;
+  padding: 12px;
+  transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
+  box-sizing: border-box;
+  
+} 
+.card:hover .content{
+  width: 100%;
+  height: 75%;
+  left: 0;
+  bottom: 0;
+} 
+.content{
+   margin: 10px 0 0; 
+  padding: 1em 1em; 
+   transform: translateX(2em);
+  line-height: 1.3em;
+  transition: 0.3s;
+  text-align: justify; 
+}
+
+
+
+
+
+________________________________________
+
+
+
+
+
+
+
+
+<section>
+        <h1 class=" lg:max-w-5xl mx-auto my-auto flex flex-col items-center text-center z-10 gap-0 md:gap-2 text-5xl font-bold">Stream your favourites Titles
+
+        </h1>
+   
+       <p class="text-center text-2xl font-light mx-auto my-auto px-32">
+            One-click streaming of the most popular movies and series across Netflix, Prime Video, HBO Max, Disney+, Peacock, and others all in one place.
+       </p>
+                    <!-- card 1 -->
+       <div class="p-8 flex">
+        <div class="container">
+            <div class="card">
+                <div class="imgbox">
+                    <img src="assets/cards/Top boy.jpg" alt="topboy">
+                </div>
+                <div class="content flex gap-2">
+                    <h1 class="font-bold text-flixiaBlue">TV Show</h1>
+                    <p class="text-2xl font-bold">TOP BOY</p>
+                </div>
+            </div>
+           </div>
+                    <!-- card 2 -->
+           <div class="container">
+            <div class="card">
+                <div class="imgbox">
+                    <img src="assets/cards/crawdadsshowtimes.jpg" alt="topboy">
+                </div>
+                <div class="content flex gap-2">
+                    <h1 class="font-bold text-flixiaBlue">MOVIES</h1>
+                    <!-- <p class="text-2xl font-bold p-5">where the crawdads sing showtimes</p> -->
+                </div>
+            </div>
+           </div>
+            <!-- card 3 -->
+           <div class="container">
+            <div class="card">
+                <div class="imgbox">
+                    <img src="assets/cards/setup.jpg" alt="topboy">
+                </div>
+                <div class="content flex gap-2">
+                    <h1 class="font-bold text-flixiaBlue">MOVIES</h1>
+                    <p class="text-2xl font-bold ">SET UP</p>
+                </div>
+            </div>
+           </div>
+           <!-- card 4 -->
+           <div class="container">
+            <div class="card">
+                <div class="imgbox">
+                    <img src="assets/cards/uncharted.jpg.crdownload" alt="topboy">
+                </div>
+                <div class="content flex gap-2">
+                    <h1 class="font-bold text-flixiaBlue">PREMIUMS</h1>
+                    <p class="text-2xl font-bold ">UNCHARTED</p>
+                </div>
+            </div>
+           </div>
+       </div>
+    </section>
